@@ -25,7 +25,6 @@ def is_triangle(sides):
 def main():
     triangles = read_input()
     n = 0
-    c = 0
     for triangle in triangles:
         if is_triangle(triangle):
             n += 1
