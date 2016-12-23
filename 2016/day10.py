@@ -92,15 +92,16 @@ def main():
         while True:
             executed = False
             for bot in bots.values():
-                if len(bot.chips) == 2 and bot.has_chips(61, 17):
-                    print('Bot {} has chips 61 and 17'.format(bot.number))
-                    return
+                # if len(bot.chips) == 2 and bot.has_chips(61, 17):
+                #     print('Bot {} has chips 61 and 17'.format(bot.number))
+                #     return
                 if bot.ready():
                     bot.exec_instruction(bots, outputs)
                     executed = True
                     break
             if not executed:
                 break
+    print(outputs[0][0] * outputs[1][0] * outputs[2][0])
 
 if __name__ == '__main__':
     main()
