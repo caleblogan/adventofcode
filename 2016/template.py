@@ -1,5 +1,3 @@
-#
-
 INPUT_FNAME = 'res/day_inp.txt'
 
 def read_input():
